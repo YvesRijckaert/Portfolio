@@ -7,7 +7,7 @@
       <div>
         <label for="name">Full name <span class="contact-label-required">&#42;</span></label>
         <p class="form-error error-small"></p>
-        <input class="contact-input" autocomplete="name" type="text" name="name" required />
+        <input class="contact-input" autocomplete="on" type="text" name="name" required />
       </div>
       <div>
         <label for="subject">Subject</label>
@@ -17,7 +17,7 @@
       <div>
         <label for="email">E-mail <span class="contact-label-required">&#42;</span></label>
         <p class="form-error error-small"></p>
-        <input class="contact-input" autocomplete="email" type="email" name="email" required />
+        <input class="contact-input" autocomplete="on" type="email" name="email" required />
       </div>
     </fieldset>
     <fieldset class="contact-fieldset">
