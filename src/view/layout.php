@@ -50,16 +50,6 @@
         echo '<div class="info box">' . $_SESSION['info'] . '</div>';
       }
     ?>
-    <?php
-        if (!empty($_SESSION['user'])) {
-      ?>
-      <section class="session wrap">
-        <h2>Welcome, Yves</h2>
-        <a href="index.php?page=logout" class="logout-button">logout</a>
-      </section>
-      <?php
-        };
-    ?>
     <header>
       <h1 class="hide">Portfolio Yves Rijckaert</h1>
       <nav class="header-nav">
@@ -79,6 +69,16 @@
       </nav>
     </header>
     <main class="main">
+    <?php
+        if (!empty($_SESSION['user'])) {
+      ?>
+      <section class="session wrap">
+        <h2>Welcome, Yves!</h2>
+        <a href="index.php?page=logout" class="logout-button">logout</a>
+      </section>
+      <?php
+        };
+    ?>
       <?php echo $content; ?>
     </main>
     <footer class="footer <?php if($currentPage === 'project-detail') { echo 'footer-project-detail';} ?>">

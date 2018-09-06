@@ -13,7 +13,7 @@
   </form>
   <?php if (!empty($_SESSION['user'])): ?>
   <!-- if admin is logged in -->
-  <a class="projects-newlink" href="index.php?page=addproject">Add new project</a>
+  <a class="projects-newlink big-white-button" href="index.php?page=addproject">Add new project</a>
   <?php endif; ?>
   <?php if (empty($projects)): ?>
     <p>No work yet</p>
@@ -32,11 +32,8 @@
               echo "<img class=\"image project-img\" src=\"../../assets/img/" . $project['shorttitle'] . "-project.png\" alt=" . $project['shorttitle'] . " width=\"720\" height=\"540\" />";
              echo "</picture>";
             echo "</a>";
-           if (!empty($_SESSION['user'])) {
-             echo ' <a href="index.php?page=work&id=' . $project['id'] . '&amp;action=delete">delete</a>';
-            }
-            echo "</article>";
-          echo "</li>";
+          echo "</article>";
+        echo "</li>";
         }
       ?>
     </ul>

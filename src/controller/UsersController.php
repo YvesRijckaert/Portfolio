@@ -12,6 +12,10 @@ class UsersController extends Controller {
   }
 
   public function login() {
+    if (!empty($_SESSION['user'])) {
+      header('Location: index.php');
+    }
+
     if (!empty($_POST)) {
       if (!empty($_POST['email']) && !empty($_POST['password'])) {
         $existing = $this->userDAO->selectByEmail($_POST['email']);

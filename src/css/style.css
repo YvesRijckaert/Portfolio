@@ -783,7 +783,7 @@ input, textarea {
 
 /* contact */
 
-.contact-header, .login-header, .projects-title, .project-detail-title {
+.contact-header, .login-header, .projects-add-header, .projects-title, .project-detail-title {
   margin-top: var(--margin-after-title);
 }
 
@@ -805,7 +805,7 @@ input, textarea {
   min-width: 30rem;
 }
 
-.contact-input, .login-input {
+.input {
   border: .2rem solid #888;
   width: 100%;
   height: 6rem;
@@ -817,22 +817,22 @@ input, textarea {
   font-size: var(--font-size-bodycopy);
 }
 
-.contact-input:focus, .login-input:focus {
+.input:focus {
   outline: none;
   border: .2rem solid var(--white);
 }
 
-.contact-input:-webkit-autofill, .contact-input:-webkit-autofill:hover, .contact-input:-webkit-autofill:focus, .contact-input:-webkit-autofill:active, .login-input:-webkit-autofill, .login-input:-webkit-autofill:hover, .login-input:-webkit-autofill:focus, .login-input:-webkit-autofill:active {
+.input:-webkit-autofill, .input:-webkit-autofill:hover, .input:-webkit-autofill:focus, .input:-webkit-autofill:active {
   box-shadow: 0 0 0 10rem var(--black) inset;
   -webkit-text-fill-color: var(--white);
 }
 
-.contact-input-text {
+.input-text {
   height: 45%;
   padding-top: 2rem;
 }
 
-.contact-input-submit, .login-input-submit {
+.input-submit {
   border: none;
   background: var(--yellow);
   width: 20vw;
@@ -845,15 +845,15 @@ input, textarea {
   align-self: flex-end;
 }
 
-.contact-input-submit:hover, .login-input-submit:hover {
+.input-submit:hover {
   cursor: pointer;
 }
 
-.contact-input:not(.contact-input-submit), .login-input:not(.login-input-submit) {
+.input:not(.input-submit) {
   margin-bottom: 2.5rem;
 }
 
-.contact-label-required {
+.label-required {
   color: #ee483c;
 }
 

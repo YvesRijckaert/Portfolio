@@ -20,6 +20,10 @@ $routes = array(
     'controller' => 'Projects',
     'action' => 'project'
   ),
+  'addproject' => array(
+    'controller' => 'Projects',
+    'action' => 'addProject'
+  ),
   'login' => array(
     'controller' => 'Users',
     'action' => 'login'

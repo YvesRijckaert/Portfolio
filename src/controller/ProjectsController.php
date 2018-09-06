@@ -72,6 +72,14 @@ class ProjectsController extends Controller {
     $this->set('currentPage', 'project-detail');
   }
 
+  public function addProject() {
+    if (empty($_SESSION['user'])) {
+      header('Location: index.php');
+    }
+    $this->set('title', 'Add New Project');
+    $this->set('currentPage', 'add-project');
+  }
+
   private function _handleAdd(){
     $projectDAO = new ProjectDAO();
     $data = array_merge($_POST, array('user_id' => $_SESSION['user']['id'], 'created' => date('Y-m-d H:i:s')));
