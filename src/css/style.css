@@ -861,6 +861,10 @@ input, textarea {
   font-style: italic;
 }
 
+.form-error.php {
+  color: #ee483c;
+}
+
 /* responsive */
 
 @media only screen and (max-width: 1000px) {
