@@ -801,6 +801,10 @@ input, textarea {
   flex-direction: column;
 }
 
+.projects-add-fieldset:not(:first-child) {
+  margin-top: var(--margin-after-title);
+}
+
 .login-form {
   min-width: 30rem;
 }
