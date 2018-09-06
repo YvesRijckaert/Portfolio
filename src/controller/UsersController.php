@@ -11,13 +11,7 @@ class UsersController extends Controller {
     $this->userDAO = new UserDAO();
   }
 
-  public function index() {
-  }
-
   public function login() {
-    $this->set('title', 'Login');
-    $this->set('currentPage', 'login');
-
     if (!empty($_POST)) {
       if (!empty($_POST['email']) && !empty($_POST['password'])) {
         $existing = $this->userDAO->selectByEmail($_POST['email']);
@@ -37,18 +31,21 @@ class UsersController extends Controller {
         $_SESSION['error'] = 'Unknown username / password';
       }
     }
+
+    $this->set('title', 'Login');
+    $this->set('currentPage', 'login');
   }
 
   public function logout() {
-    $this->set('title', 'Logout');
-    $this->set('currentPage', 'logout');
-
     if (!empty($_SESSION['user'])) {
       unset($_SESSION['user']);
     }
     $_SESSION['info'] = 'Logged Out';
     header('Location: index.php');
     exit();
+
+    $this->set('title', 'Logout');
+    $this->set('currentPage', 'logout');
   }
 
 }
