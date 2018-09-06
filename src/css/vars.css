@@ -1,0 +1,26 @@
+:root {
+  /* colors */
+  --yellow: #fef86b;
+  --black: black;
+  --white: white;
+  --blue: #2e3797;
+  --light-grey: #373536;
+  --dark-grey: #212121;
+
+  /* margins */
+  --margin-between-sections: 15rem;
+  --margin-after-title: 5rem;
+
+  /* fonts */
+
+  /*font family*/
+  --font-family-bodycopy: circular, arial, helvetica, sans-serif;
+  --font-family-title: 'druk text', arial, helvetica, sans-serif;
+
+  /* font size */
+  --font-size-h1: 5vmax;
+  --font-size-h2: 2.7vmax;
+  --font-size-h3: calc(2.5rem + .25vw);
+  --font-size-bodycopy: calc(1.5rem + .25vw);
+
+}
