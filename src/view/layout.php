@@ -74,7 +74,16 @@
       ?>
       <section class="session wrap">
         <h2>Welcome, Yves!</h2>
-        <a href="index.php?page=logout" class="logout-button">logout</a>
+        <nav class="header-nav">
+          <ul class="header-nav-menu">
+            <li class="header-nav-menu-item-session">
+              <a href="index.php?page=addproject">Add project</a>
+            </li>
+            <li class="header-nav-menu-item-session">
+              <a href="index.php?page=logout">logout</a>
+            </li>
+          </ul>
+        </nav>
       </section>
       <?php
         };
