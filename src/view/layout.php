@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="author" content="Yves Rijckaert">
@@ -25,7 +25,6 @@
     <meta name="msapplication-TileImage" content="../assets/img/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
     <?php echo $css; ?>
-    <script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please update your browser. This site requires it.");</script>
     <script>
       WebFontConfig = {
         custom: {
@@ -76,7 +75,8 @@
         <h2>Welcome, Yves!</h2>
         <nav class="header-nav">
           <ul class="header-nav-menu">
-            <li class="header-nav-menu-item-session">
+            <li class="header-nav-menu-item-session <?php if ($currentPage === 'add-project') {
+          echo 'header-nav-menu-item-active'; }?>">
               <a href="index.php?page=addproject">Add project</a>
             </li>
             <li class="header-nav-menu-item-session">

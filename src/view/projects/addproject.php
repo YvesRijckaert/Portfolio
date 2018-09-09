@@ -7,13 +7,13 @@
           <label for="title">Title <span class="label-required">&#42;</span></label>
           <p class="form-error error-small"></p>
           <?php if (!empty($errors['title'])) { echo '<p class="form-error error-small php">' . $errors['title'] . '</p>'; }?>
-          <input class="input" id="title" type="text" name="title" <?php if(!empty($_POST['title'])) echo 'value="' . $_POST['title'] . '"';?> required />
+          <input class="input" id="title" type="text" name="title" <?php if(!empty($_POST['title'])) echo 'value="' . $_POST['title'] . '"';?> placeholder="Memento design" required />
         </div>
         <div>
           <label for="short-title">Short title <span class="label-required">&#42;</span></label>
           <p class="form-error error-small"></p>
           <?php if (!empty($errors['short-title'])) { echo '<p class="form-error error-small php">' . $errors['short-title'] . '</p>'; }?>
-          <input class="input" id="short-title" type="text" name="short-title" <?php if(!empty($_POST['short-title'])) echo 'value="' . $_POST['short-title'] . '"';?> required />
+          <input class="input" id="short-title" type="text" name="short-title" <?php if(!empty($_POST['short-title'])) echo 'value="' . $_POST['short-title'] . '"';?> placeholder="memento" required />
         </div>
       </fieldset>
       <fieldset class="projects-add-fieldset">
@@ -21,19 +21,19 @@
           <label for="creators">Creator(s) <span class="label-required">&#42;</span></label>
           <p class="form-error error-small"></p>
           <?php if (!empty($errors['creators'])) { echo '<p class="form-error error-small php">' . $errors['creators'] . '</p>'; }?>
-          <input class="input" id="creators" type="text" name="creators" <?php if(!empty($_POST['creators'])) echo 'value="' . $_POST['creators'] . '"';?> required />
+          <input class="input" id="creators" type="text" name="creators" <?php if(!empty($_POST['creators'])) echo 'value="' . $_POST['creators'] . '"';?> placeholder="Yves Rijckaert" required />
         </div>
         <div>
           <label for="client">Client <span class="label-required">&#42;</span></label>
           <p class="form-error error-small"></p>
           <?php if (!empty($errors['client'])) { echo '<p class="form-error error-small php">' . $errors['client'] . '</p>'; }?>
-          <input class="input" id="client" type="text" name="client" <?php if(!empty($_POST['client'])) echo 'value="' . $_POST['client'] . '"';?> required />
+          <input class="input" id="client" type="text" name="client" <?php if(!empty($_POST['client'])) echo 'value="' . $_POST['client'] . '"';?> placeholder="University Howest" required />
         </div>
         <div>
           <label for="type">Type <span class="label-required">&#42;</span></label>
           <p class="form-error error-small"></p>
           <?php if (!empty($errors['type'])) { echo '<p class="form-error error-small php">' . $errors['type'] . '</p>'; }?>
-          <input class="input" id="type" type="text" name="type" <?php if(!empty($_POST['type'])) echo 'value="' . $_POST['type'] . '"';?> required />
+          <input class="input" id="type" type="text" name="type" <?php if(!empty($_POST['type'])) echo 'value="' . $_POST['type'] . '"';?> placeholder="Webdesign, UX, ..." required />
         </div>
         <div>
           <div class="input-radio-wrap">

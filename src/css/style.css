@@ -1618,7 +1618,6 @@ input, textarea {
   display: flex;
   justify-content: space-between;
   margin-top: 2.5rem;
-  margin-bottom: -2.5rem;
   padding: 2.5rem;
   border: .2rem solid var(--white);
 }
