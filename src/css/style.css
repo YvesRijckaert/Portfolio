@@ -641,6 +641,16 @@ input, textarea {
   color: var(--black);
 }
 
+.loading-page {
+  display: flex;
+  justify-content: center;
+}
+
+.loading-page-spinner {
+  width: 10rem;
+  height: 10rem;
+}
+
 .projects-grid {
   margin-top: 10rem;
   display: flex;
